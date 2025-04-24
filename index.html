@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyVerse - Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Siam Loves Mowry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1.mainHeadline {
+      color: crimson;
+      font-size: 2.5em;
+      margin-bottom: 50px;
+      text-shadow: 1px 1px 2px gray;
+    }
+    #noBtn {
+      position: absolute;
+    }
+    .hidden {
+      display: none;
+    }
+    #secondPage img {
+      width: 200px;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to CyVerse</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Welcome to CyVerse</h2>
-        <p>Welcome to CyVerse, your destination for cutting-edge technology solutions.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 CyVerse. All rights reserved.</p>
-    </footer>
+
+<h1 class="mainHeadline">Siam loves Mowry forever</h1>
+
+<div id="firstPage">
+  <h2>Do you love me?</h2>
+  <button onclick="showSecondPage()">You love me</button>
+  <button id="noBtn">You don't love me</button>
+</div>
+
+<div id="secondPage" class="hidden">
+  <h2>My Confession</h2>
+  <p>
+    I'm really sorry for everything that happened in the past.  
+    I never meant to hurt you, and I hope someday you'll understand.  
+    You mean more to me than words can say.  
+    Thank you for choosing love.
+  </p>
+  <p>Here’s a memory spot just for us:</p>
+  <img src="https://via.placeholder.com/200" alt="Add your photo here">
+</div>
+
+<script>
+  const noBtn = document.getElementById('noBtn');
+
+  noBtn.addEventListener('mouseover', () => {
+    const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
+    const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+    noBtn.style.left = `${x}px`;
+    noBtn.style.top = `${y}px`;
+  });
+
+  function showSecondPage() {
+    document.getElementById('firstPage').classList.add('hidden');
+    document.getElementById('secondPage').classList.remove('hidden');
+  }
+</script>
+
 </body>
 </html>
