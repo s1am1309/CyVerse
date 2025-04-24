@@ -2,33 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Siam Loves Mowry</title>
+  <title>Siam Loves Mowry Forever</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      margin-top: 50px;
+      overflow-x: hidden;
     }
+
     h1.mainHeadline {
-      color: crimson;
-      font-size: 2.5em;
-      margin-bottom: 50px;
-      text-shadow: 1px 1px 2px gray;
+      color: #d6336c;
+      font-size: 2.8em;
+      margin: 20px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    #firstPage h2 {
+      font-size: 1.8em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 1.2em;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff6699;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff3366;
+      transform: scale(1.05);
+    }
+
     #noBtn {
       position: absolute;
     }
+
     .hidden {
       display: none;
     }
-    #secondPage img {
-      width: 200px;
-      height: auto;
-      margin-top: 20px;
+
+    #secondPage {
+      padding: 20px;
+      max-width: 90%;
+    }
+
+    #secondPage p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      color: #444;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
+
+<!-- Background music -->
+<audio autoplay loop>
+  <source src="https://github.com/sumoncyber/Priiyotoma/raw/main/Priiyotoma.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 <h1 class="mainHeadline">Siam loves Mowry forever</h1>
 
@@ -41,13 +93,19 @@
 <div id="secondPage" class="hidden">
   <h2>My Confession</h2>
   <p>
-    I'm really sorry for everything that happened in the past.  
-    I never meant to hurt you, and I hope someday you'll understand.  
-    You mean more to me than words can say.  
-    Thank you for choosing love.
+    Mowry, amar moner ekta ekmatro rani tumi. Amar jibone jei shob vul hoye geche, ami tar jonno onek dukkho peyechi.  
+    Kintu ekta jinis ami always jani—amar bhalobasha shotti chhilo, chhilo na kono nijer interest er jonno.  
+    Tumi jokhoni haso, amar duniya roddur hoye uthe. Tumi jokhoni chole jao, amar prithibi ekdom shunno lage.  
+    Ami kokhono perfect chele chilam na, but amar bhalobasha always pure chhilo.
   </p>
-  <p>Here’s a memory spot just for us:</p>
-  <img src="https://via.placeholder.com/200" alt="Add your photo here">
+  <p>
+    Hoyto tumi amake ar kokhono ager moto bhalobey na, but ami promise kori, ami chesta korbo ekta bhalo manush hoye tumar jonno.  
+    Karor shathe na thakte pari, tateo tumi amar moner majhe chirodin thakbe.
+  </p>
+  <p>
+    Bhalobashi. Ekti shobdo, jeta amar prithibir shobcheye boro satyi.  
+    And amar oi satyi'r naam holo — <strong style="color: crimson;">Mowry</strong>.
+  </p>
 </div>
 
 <script>
